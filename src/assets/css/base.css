@@ -1,6 +1,7 @@
 @import "normalize.css";
 
 :root {
+  /* css定义变量 */
   --color-text: #666;
   --color-high-text: #ff5777;
   --color-tint: #ff8918;
@@ -17,6 +18,20 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Helvetica Neur",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 100vw;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 .clearfix {
   zoom: 1;
 }
@@ -26,4 +41,12 @@
   display: block;
   height: 0;
   clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
